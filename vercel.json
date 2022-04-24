@@ -1,0 +1,14 @@
+{
+    "redirects": [
+        {
+            "source": "/",
+            "destination": "https://www.supermeme.ai",
+            "permanent": true
+        },
+        {
+            "source": "/:path*",
+            "destination": "https://www.supermeme.ai/:path*",
+            "permanent": true
+        }
+    ]
+}
