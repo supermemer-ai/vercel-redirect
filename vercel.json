@@ -6,6 +6,34 @@
             "permanent": true
         },
         {
+              "src": "/blog",
+              "dest": "https://supermeme.superblog.cloud/"  
+            },
+            {
+              "src": "/blog/(.*?)([.]\\w{2,5})(\\?[^/]+)?",
+              "dest": "https://supermeme.superblog.cloud/$1$2$3"
+            },
+            {
+              "src": "/blog/([\\S\\s]+)",
+              "dest": "https://supermeme.superblog.cloud/$1/"
+            },
+            {
+              "src": "/_elderjs/svelte/(.*?)([.]\\w{2,5})(\\?[^/]+)?",
+              "dest": "https://supermeme.superblog.cloud/_elderjs/svelte/$1$2$3"
+            },
+            {
+              "src": "/_elderjs/svelte/([\\S\\s]+)",
+              "dest": "https://supermeme.superblog.cloud/_elderjs/svelte/$1/"
+            },
+            {
+              "src": "/.netlify/functions/(.*?)([.]\\w{2,5})(\\?[^/]+)?",
+              "dest": "https://supermeme.superblog.cloud/.netlify/functions/$1$2$3"
+            },
+            {
+              "src": "/.netlify/functions/([\\S\\s]+)",
+              "dest": "https://supermeme.superblog.cloud/.netlify/functions/$1/"
+            },
+        {
             "source": "/:path*",
             "destination": "https://www.supermeme.ai/:path*",
             "permanent": true
