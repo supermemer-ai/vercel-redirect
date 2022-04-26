@@ -6,6 +6,13 @@
             "permanent": true
         },
         {
+            "source": "/:path*",
+            "destination": "https://www.supermeme.ai/:path*",
+            "permanent": true
+        }
+    ],
+    "rewrites": [
+        {
               "source": "/blog",
               "destination": "https://supermeme.superblog.cloud/"  
             },
@@ -32,11 +39,6 @@
             {
               "source": "/.netlify/functions/([\\S\\s]+)",
               "destination": "https://supermeme.superblog.cloud/.netlify/functions/$1/"
-            },
-        {
-            "source": "/:path*",
-            "destination": "https://www.supermeme.ai/:path*",
-            "permanent": true
-        }
+            }
     ]
 }
