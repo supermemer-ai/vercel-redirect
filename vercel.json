@@ -1,16 +1,4 @@
 {
-    "redirects": [
-        {
-            "source": "/",
-            "destination": "https://www.supermeme.ai",
-            "permanent": true
-        },
-        {
-            "source": "/:path*",
-            "destination": "https://www.supermeme.ai/:path*",
-            "permanent": true
-        }
-    ],
     "rewrites": [
         {
               "source": "/blog",
@@ -40,5 +28,17 @@
               "source": "/.netlify/functions/([\\S\\s]+)",
               "destination": "https://supermeme.superblog.cloud/.netlify/functions/$1/"
             }
+    ],
+    "redirects": [
+        {
+            "source": "/",
+            "destination": "https://www.supermeme.ai",
+            "permanent": true
+        },
+        {
+            "source": "/:path*",
+            "destination": "https://www.supermeme.ai/:path*",
+            "permanent": true
+        }
     ]
 }
